@@ -3,6 +3,7 @@
 # Passo 1: Entrar no sistema da empresa
     #https://dlp.hashtagtreinamentos.com/python/intensivao/login
 import pyautogui
+import time
 
 # pyautogui.click -> clicar com o mouse
 # pyautogui.write -> escrever um texto
@@ -22,8 +23,11 @@ pyautogui.write(link)
 pyautogui.press("enter")
 
 # Esperar o site carregar
+time.sleep(3)
 
 # Passo 2: Fazer login
+
+
 # Passo 3: Importar a base de dados de produtos
 # Passo 4: Cadastrar 1 produto
 # Passo 5: Repetir o cadastro para todos os produtos
