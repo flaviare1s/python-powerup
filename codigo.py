@@ -61,8 +61,10 @@ pyautogui.press("tab")
 pyautogui.write("6.5")
 pyautogui.press("tab")
 pyautogui.write("NaN")
-pyautogui.press("enter")
 
+#apertar para enviar
+pyautogui.press("tab")
+pyautogui.press("enter")
 
 # Passo 5: Repetir o cadastro para todos os produtos
 
