@@ -6,8 +6,9 @@ import pyautogui #para instalar : pip install pyautogui
 import time
 
 # pyautogui.click -> clicar com o mouse
-# pyautogui.write -> escrever um texto
-# pyautogui.press -> apertar 1 tecla
+# pyautogui.write -> escrever um textoBOHA000251    Hashtag
+# pyautogui.press -> apertar 1 teclaMOMU000111  Multilaser  tipo    categoria   preco_unitario  custo   obs 
+
 # pyautogui.hotkey -> atalho (combinação de teclas)
 
 pyautogui.PAUSE = 0.5
@@ -50,20 +51,28 @@ for linha in tabela.index:
     # Passo 4: Cadastrar 1 produto
     pyautogui.click(x=624, y=299, clicks=1)
 
+    codigo = tabela.loc[linha, "codigo"]
+    marca = tabela.loc[linha, "marca"]
+    tipo = tabela.loc[linha, "tipo"]
+    categoria = tabela.loc[linha, "categoria"]
+    preco_unitario = tabela.loc[linha, "preco_unitario"]
+    custo = tabela.loc[linha, "custo"]
+    obs = tabela.loc[linha, "obs"]
+
     #preencher os campos
-    pyautogui.write("MOLO000251")
+    pyautogui.write(str(codigo))
     pyautogui.press("tab")
-    pyautogui.write("Logitech")
+    pyautogui.write(str(marca))
     pyautogui.press("tab")
-    pyautogui.write("Mouse")
+    pyautogui.write(str(tipo))
     pyautogui.press("tab")
-    pyautogui.write("1")
+    pyautogui.write(str(categoria))
     pyautogui.press("tab")
-    pyautogui.write("25.95")
+    pyautogui.write(str(preco_unitario))
     pyautogui.press("tab")
-    pyautogui.write("6.5")
+    pyautogui.write(str(custo))
     pyautogui.press("tab")
-    pyautogui.write("NaN")
+    pyautogui.write(str(obs))
 
     #apertar para enviar
     pyautogui.press("tab")
