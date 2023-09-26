@@ -41,7 +41,8 @@ time.sleep(3)
 # Pandas: pip install pandas numpy openpyxl
 import pandas
 
-
+tabela = pandas.read_csv("produtos.csv")
+print(tabela)
 
 # Passo 4: Cadastrar 1 produto
 # Passo 5: Repetir o cadastro para todos os produtos
