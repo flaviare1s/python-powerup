@@ -66,6 +66,8 @@ pyautogui.write("NaN")
 pyautogui.press("tab")
 pyautogui.press("enter")
 
+pyautogui.scroll(50000)
+
 # Passo 5: Repetir o cadastro para todos os produtos
 
 
