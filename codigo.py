@@ -26,8 +26,10 @@ pyautogui.press("enter")
 time.sleep(3)
 
 # Passo 2: Fazer login
-
-
+pyautogui.click(x=727, y=407, clicks=1)
+pyautogui.write("emaildeteste@gmail.com")
+pyautogui.click(x=735, y=515, clicks=1)
+pyautogui.write("senha1234")
 # Passo 3: Importar a base de dados de produtos
 # Passo 4: Cadastrar 1 produto
 # Passo 5: Repetir o cadastro para todos os produtos
