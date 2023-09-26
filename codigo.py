@@ -57,7 +57,7 @@ for linha in tabela.index:
     categoria = tabela.loc[linha, "categoria"]
     preco_unitario = tabela.loc[linha, "preco_unitario"]
     custo = tabela.loc[linha, "custo"]
-    obs = tabela.loc[linha, "obs"]
+    
 
     #preencher os campos
     pyautogui.write(str(codigo))
@@ -72,8 +72,11 @@ for linha in tabela.index:
     pyautogui.press("tab")
     pyautogui.write(str(custo))
     pyautogui.press("tab")
-    pyautogui.write(str(obs))
 
+    obs = tabela.loc[linha, "obs"]
+    if not pandas.isna(obs):
+        pyautogui.write(str(obs))
+    
     #apertar para enviar
     pyautogui.press("tab")
     pyautogui.press("enter")
